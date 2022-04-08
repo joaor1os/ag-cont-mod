@@ -1,7 +1,13 @@
 from flask import Flask, render_template, request, redirect
 app = Flask('app')
 
-contacts = []
+contacts = [
+  {
+  'name': 'Jorge',
+  'email': 'jorge@gmail.com',
+  'phone': '(16) 3852-6936'
+  }
+]
 
 @app.route('/')
 def index():

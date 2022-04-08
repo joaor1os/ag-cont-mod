@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo App</title>
-  <link rel="stylesheet" href="static/style.css">
-  <link rel="stylesheet" href="static/neumorphism-ui.css">
+  <title>Agenda de Contatos</title>
 </head>
 <body>
+  <h1>Agenda de Contatos</h1>
   <!-- Formulário de criação de TODO -->
   <form action="/create" method="POST">
     <input name="name">
@@ -41,9 +40,9 @@
             >
             <button type="submit">Editar</button>
           </form>
-        <a href="/delete/{{loop.index0}}">
-          ❌
-        </a>
+          <a href="/delete/{{loop.index0}}">
+            ❌
+          </a>
       </li>
     {% endfor %}
   </ul>
